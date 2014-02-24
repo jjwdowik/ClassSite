@@ -11,12 +11,12 @@
 
 	<body>
 		<header>
-			<nav class="clearfix">
+			<nav class="clearfix" id="nav">
 				<ul class="clearfix">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#">Projects</a></li>
-					<li><a href="#">Experience</a></li>
+					<li id="current"><a href="#home">Home</a></li>
+					<li><a href="#skills" id="">Skills</a></li>
+					<li><a href="#projects" id="">Projects</a></li>
+					<li><a href="#experiences" id="">Experience</a></li>
 				</ul>
 				<a href="#" id="pull">Menu</a>
 			</nav>
@@ -31,15 +31,31 @@
 		</section>
 
 		<section id="skills">
-			more skills
+			<h1 class="skills">Skills</h1>
+			<div class="circContainer">
+				<div class="smCircle"><p class="circText">C++</p></div>
+				<div class="smCircle"><p class="circText">Java</p></div>
+				<div class="smCircle"><p class="circText">Web Development</p></div>
+				<div class="smCircle"><p class="circText">Project Management</p></div>
+			</div>
 		</section>
 
+		<section id="projects">
+			<h1 class="pro">Projects</h1>
+		</section>
+
+		<section id="experiences">
+			<h1 class="exp">Experiences</h1>
+		</section>				
+
 		<footer>
-			copyright yeahhh
+			<p class="foot">All Rights Reserved. 2014. Website created by Jeremy Wdowik. </p>
 		</footer>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="js/jquery.localscroll-1.2.7.js"></script>
+	<script src="js/jquery.scrollTo-1.4.3.1.js"></script>		
 	<script src="js/main.js"></script>
 
 	</body>

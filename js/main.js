@@ -16,4 +16,15 @@ $(function() {
 	});
 });
 
+$('#nav ul li').click(function(){
+	$('#nav ul li').removeAttr('id', 'current');
+	$(this).attr('id', 'current');;
+});
+
+//for scroll
+
+$(document).ready(function() {
+   $('#nav').localScroll({duration:800});
+});
+
 

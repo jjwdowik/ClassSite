@@ -16,13 +16,14 @@ body {
 	background-color: #ece8e5;
 }
 nav {
-	height: 44px;
+	height: 48px;
 	width: 100%;
 	background: black;
 	font-size: 14pt;
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-weight: bold;
 	position: fixed;
+	z-index: 999;
 /*	border-bottom: 2px solid #283744;*/
 }
 nav ul {
@@ -45,13 +46,13 @@ nav a {
 	text-shadow: 1px 1px 0px #283744;
 	border-bottom:0.2em solid black;
 }
-nav li:first-child a {
+nav li#current {
     border-bottom:0.3em solid white;
 /*	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;*/
 }
-nav a:hover, nav a:active {
+nav li:hover, nav li:active {
 	color: #fff;
     border-bottom:0.3em solid white;
 }
@@ -60,12 +61,20 @@ nav a#pull {
 }
 
 
+
+
+
 /********HOME STUFF*************/
 
 #home {
 	background: #4DB6C4;
 	height: 600px;
 	width: 100%;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    transition: all ease 0.3s;	
 }
 
 .space {
@@ -101,14 +110,87 @@ h1.name {
 	background: #8C8C8C;
 	height: 600px;
 	width: 100%;
-	transition: all 0.25s ease;
+}
+
+h1.skills {
+	text-align: center;
+	padding-top: 50px;
 }
 
 
 
 
+/********PROJECTS STUFF *************/
 
 
+#projects {
+	background: #8E41D5;
+	height: 600px;
+	width: 100%;
+}
+
+h1.pro {
+	text-align: center;
+	padding-top: 50px;	
+}
+
+.circContainer {
+	position: relative;
+	height: 200px;
+	width: 78%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	z-index: 1;
+}
+
+
+.smCircle {
+    display: block;
+    float: left;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 300px;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+    background-color: blue;
+
+}
+
+.circText {
+	margin: 0;
+	padding-top: 30px;
+}
+
+/********EXPERIENCES STUFF *************/
+
+
+
+#experiences {
+	background: #FF8040;
+	height: 600px;
+	width: 100%;
+}
+
+h1.exp {
+	text-align: center;
+	padding-top: 20px;	
+}
+
+/********FOOTER STUFF *************/
+
+
+footer {
+	height: 30px;
+	background-color: gray;
+}
+
+p.foot {
+	margin: 0;
+	text-align: center;
+	font-size: 1.2em;
+}
 
 
 
@@ -181,6 +263,9 @@ h1.name {
 		position: absolute;
 		right: 15px;
 		top: 10px;
+	}
+	footer {
+		height: 45px;
 	}
 }
 
