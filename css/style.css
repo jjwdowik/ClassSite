@@ -29,7 +29,7 @@ nav {
 nav ul {
 	padding: 0;
 	margin: 0 auto;
-	width: 600px;
+	width: 750px;
 	height: 40px;
 }
 nav li {
@@ -68,7 +68,7 @@ nav a#pull {
 
 #home {
 	background: #4DB6C4;
-	height: 600px;
+	height: 800px;
 	width: 100%;
     -webkit-transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
@@ -108,7 +108,7 @@ h1.name {
 
 #skills {
 	background: #8C8C8C;
-	height: 600px;
+	height: 800px;
 	width: 100%;
 }
 
@@ -125,7 +125,7 @@ h1.skills {
 
 #projects {
 	background: #8E41D5;
-	height: 600px;
+	height: 800px;
 	width: 100%;
 }
 
@@ -169,13 +169,29 @@ h1.pro {
 
 #experiences {
 	background: #FF8040;
-	height: 600px;
+	height: 800px;
 	width: 100%;
 }
 
 h1.exp {
 	text-align: center;
-	padding-top: 20px;	
+	padding-top: 50px;	
+}
+
+
+/********IDEAS STUFF *************/
+
+
+
+#ideas {
+	background: blue;
+	height: 800px;
+	width: 100%;
+}
+
+h1.exp {
+	text-align: center;
+	padding-top: 50px;	
 }
 
 /********FOOTER STUFF *************/
@@ -221,7 +237,7 @@ p.foot {
 	}*/
 
 /*Styles for screen 515px and lower*/
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 750px) {
 /*	.space {
 		padding: 60px;
 	}*/
