@@ -3,6 +3,7 @@
 	<head>
 		<title>Jeremy Wdowik</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,25 +12,23 @@
 
 	<body>
 		<header>
-			<nav class="clearfix" id="nav">
-				<ul class="clearfix">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="skills.html">Skills</a></li>
-					<li><a href="projects.html">Projects</a></li>
-					<li id="current"><a href="experiences.html">Experience</a></li>
-					<li><a href="ideas.html">Ideas</a></li>
-				</ul>
-				<a href="#" id="pull">Menu</a>
-			</nav>
+			<?php
+				include('header.php');
+			?>
 		</header>
 
-		<section id="experiences">
-			<h1 class="exp">Experiences</h1>
-		</section>				
 
-		<footer>
-			<p class="foot">All Rights Reserved. 2014. Website created by Jeremy Wdowik. </p>
-		</footer>
+
+		<section id="home">
+			<div class="space"></div>
+			<div class="center"><img src=".../img/wdowik.jpg" alt="Jeremy" class="circular"></div>
+			<h1 class="name">Jeremy Wdowik</h1>
+		</section>			
+
+
+		<?php
+			include('footer.php');
+		?>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>

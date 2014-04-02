@@ -11,25 +11,18 @@
 
 	<body>
 		<header>
-			<nav class="clearfix" id="nav">
-				<ul class="clearfix">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="skills.html">Skills</a></li>
-					<li id="current"><a href="projects.html">Projects</a></li>
-					<li><a href="experiences.html">Experience</a></li>
-					<li><a href="ideas.html">Ideas</a></li>
-				</ul>
-				<a href="#" id="pull">Menu</a>
-			</nav>
+			<?php
+				include('header.php');
+			?>
 		</header>
+		
+		<section id="ideas">
+			<h1 class="exp">Ideas</h1>
+		</section>				
 
-		<section id="projects">
-			<h1 class="pro">Projects</h1>
-		</section>
-
-		<footer>
-			<p class="foot">All Rights Reserved. 2014. Website created by Jeremy Wdowik. </p>
-		</footer>
+		<?php
+			include('footer.php');
+		?>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>

@@ -3,7 +3,6 @@
 	<head>
 		<title>Jeremy Wdowik</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -12,26 +11,20 @@
 
 	<body>
 		<header>
-			<nav class="clearfix" id="nav">
-				<ul class="clearfix">
-					<li id="current"><a href="#home">Home</a></li>
-					<li><a href="skills.html">Skills</a></li>
-					<li><a href="projects.html">Projects</a></li>
-					<li><a href="experiences.html">Experience</a></li>
-					<li><a href="ideas.html">Ideas</a></li>
-				</ul>
-				<a href="#" id="pull">Menu</a>
-			</nav>
+			<?php
+				include('header.php');
+			?>
 		</header>
 
-
-
-		<section id="home">
-			<div class="space"></div>
-			<div class="center"><img src="http://localhost/ClassSite/img/wdowik.jpg" alt="Jeremy" class="circular"></div>
-			<h1 class="name">Jeremy Wdowik</h1>
-		</section>			
-
+		<section id="skills">
+			<h1 class="skills">Skills</h1>
+			<div class="circContainer">
+				<div class="smCircle"><p class="circText">C++</p></div>
+				<div class="smCircle"><p class="circText">Java</p></div>
+				<div class="smCircle"><p class="circText">Web Development</p></div>
+				<div class="smCircle"><p class="circText">Project Management</p></div>
+			</div>
+		</section>
 		<footer>
 			<p class="foot">All Rights Reserved. 2014. Website created by Jeremy Wdowik. </p>
 		</footer>

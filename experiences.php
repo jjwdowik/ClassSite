@@ -11,20 +11,13 @@
 
 	<body>
 		<header>
-			<nav class="clearfix" id="nav">
-				<ul class="clearfix">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="skills.html">Skills</a></li>
-					<li><a href="projects.html">Projects</a></li>
-					<li><a href="experiences.html">Experience</a></li>
-					<li id="current"><a href="ideas.html">Ideas</a></li>
-				</ul>
-				<a href="#" id="pull">Menu</a>
-			</nav>
+			<?php
+				include('header.php');
+			?>
 		</header>
-		
-		<section id="ideas">
-			<h1 class="exp">Ideas</h1>
+
+		<section id="experiences">
+			<h1 class="exp">Experiences</h1>
 		</section>				
 
 		<footer>

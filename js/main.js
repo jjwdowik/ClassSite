@@ -16,8 +16,8 @@ $(function() {
 	});
 });
 
-$('#nav ul li').click(function(){
-	$('#nav ul li').removeAttr('id', 'current');
+$('nav ul li').click(function(){
+	$('nav ul li').removeAttr('id', 'current');
 	$(this).attr('id', 'current');;
 });
 
