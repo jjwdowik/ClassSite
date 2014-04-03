@@ -21,7 +21,7 @@
 
 		<section id="home">
 			<div class="space"></div>
-			<div class="center"><img src=".../img/wdowik.jpg" alt="Jeremy" class="circular"></div>
+			<div class="center"><img src="http://www.jeremywdowik.com/second/img/wdowik.jpg" alt="Jeremy" class="circular"></div>
 			<h1 class="name">Jeremy Wdowik</h1>
 		</section>			
 
