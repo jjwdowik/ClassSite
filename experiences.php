@@ -20,9 +20,9 @@
 			<h1 class="exp">Experiences</h1>
 		</section>				
 
-		<footer>
-			<p class="foot">All Rights Reserved. 2014. Website created by Jeremy Wdowik. </p>
-		</footer>
+		<?php
+			include('footer.php');
+		?>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
