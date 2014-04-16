@@ -34,6 +34,9 @@ $('#nav ul li').click(function(){
 
 $(document).ready(function() {
    $('#nav').localScroll({duration:800});
+
+   $(window).stellar();
+   
 });
 
 
