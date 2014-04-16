@@ -104,6 +104,31 @@
 		
 		<section id="contact">
 			<h1 class="con">Contact</h1>
+
+			<div id="contactForm">
+				<form action="<?=$_SERVER['PHP_SELF'];?>" method = "POST" onsubmit="return checkEmail(this);">
+					<fieldset>
+						<label for="name">Name</label>
+						<input id="name" name="name" type="text" placeholder="First and last name" required autofocus>
+						<div id="divBreak"></div>	
+						<label for="email">Email</label>
+						<input id="email" name="email" type="email" placeholder="example@domain.com" required>
+						<div id="divBreak"></div>
+						<label for="verifyEmail">Verify Email</label>
+						<input id="verifyEmail" name="verifyEmail" type="email" placeholder="example@domain.com" required>
+						<div id="divBreak"></div>
+						<label for="major">message</label>
+						<textarea id = "message" name="message" type="text" placeholder = "Please write your message here"></textarea>
+						<div id="divBreak"></div>
+					</fieldset>
+
+
+					<input type = "SUBMIT" id = "submit" class="resume" value = "Submit">
+
+
+				</form>
+			</div>
+
 		</section>	
 
 
@@ -117,6 +142,7 @@
 	<script type="text/javascript" src="js/jquery.scrollTo-1.4.3.1.js"></script>
 	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>		
 	<script type="text/javascript" src="js/main.js"></script>
+	<script src="js/emailCheck.js" type="text/javascript"></script>
 
 	</body>
 
