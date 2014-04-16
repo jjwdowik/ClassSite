@@ -20,13 +20,13 @@
 
 
 
-		<section id="home">
+		<section id="home" class="slide" data-slide="1">
 			<div class="space"></div>
 			<div class="center"><img src="http://localhost/ClassSite/img/wdowik.jpg" alt="Jeremy" class="circular"></div>
 			<h1 class="name">Jeremy Wdowik</h1>
 		</section>
 
-		<section id="skills" data-stellar-background-ratio="0.5">
+		<section id="skills" class="slide" data-slide="2" data-stellar-background-ratio="0.5">
 			<h1 class="skills">Skills</h1>
 			<div class="circContainer">
 				<div class="myButton">C++</div>
@@ -40,7 +40,7 @@
 			</div>
 		</section>
 
-		<section id="projects">
+		<section id="projects" class="slide" data-slide="3">
 			<h1 class="pro">Projects</h1>
 			<h2 class="pro">Hover for details!</h2>
 			<div class="projContainer">
@@ -85,7 +85,7 @@
 
 		</section>
 
-		<section id="experiences" data-stellar-background-ratio="0.5">
+		<section id="experiences" class="slide" data-slide="4" data-stellar-background-ratio="0.5">
 			<h1 class="exp">Experience</h1>
 			<div class="theExp">
 				<h1>MPrint - University of Michigan</h1>
@@ -102,11 +102,11 @@
 			</div>
 		</section>		
 		
-		<section id="contact">
+		<section id="contact" class="slide" data-slide="5">
 			<h1 class="con">Contact</h1>
 
 			<div id="contactForm">
-				<form action="<?=$_SERVER['PHP_SELF'];?>" method = "POST" onsubmit="return checkEmail(this);">
+				<form action="processForm.php" method = "POST" onsubmit="return checkEmail(this);">
 					<fieldset>
 						<label for="name">Name</label>
 						<input id="name" name="name" type="text" placeholder="First and last name" required autofocus>
@@ -140,6 +140,7 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.localscroll-1.2.7.js"></script>
 	<script type="text/javascript" src="js/jquery.scrollTo-1.4.3.1.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
 	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>		
 	<script type="text/javascript" src="js/main.js"></script>
 	<script src="js/emailCheck.js" type="text/javascript"></script>

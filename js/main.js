@@ -1,3 +1,5 @@
+dataslide = 1;
+
 $(function() {
     var pull        = $('#pull');
         menu        = $('nav ul');
@@ -36,6 +38,43 @@ $(document).ready(function() {
    $('#nav').localScroll({duration:800});
 
    $(window).stellar();
+
+    var slide = $('.slide');
+
+    slide.waypoint(function (event, direction) {
+
+        var newTemp = dataslide;
+
+        dataslide = $(this).attr('data-slide');
+
+        console.log("heree" + dataslide + " direction " + direction);
+
+
+        if (direction === 'down' && dataslide!=1) {
+            console.log(" downnn ");
+            $('#nav ul li[data-slide="' + dataslide + '"]').attr('id', 'current').prev().removeAttr('id', 'current');
+        }
+        else if(direction === 'up' && dataslide!=1) {
+            console.log(" upppp ");
+            $('#nav ul li[data-slide="' + dataslide + '"]').attr('id', 'current').next().removeAttr('id', 'current');
+        }
+        else if(dataslide == 1) {
+            dataslide = newTemp;
+        }
+
+
+    });
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() === 0) {          
+            $('#nav ul li[data-slide="1"]').attr('id', 'current');
+            $('#nav ul li[data-slide="2"]').removeAttr('id', 'current');
+        }
+
+    });
+
+
+
    
 });
 
