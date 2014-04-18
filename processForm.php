@@ -1,7 +1,3 @@
-<!-- this form sends emails with responses of form -->
-
-
-
 <?php
 	$filename = "jjForm.csv";
 	$handle = fopen($filename, 'a');
@@ -20,7 +16,6 @@
 	// $headers = "From: ". $_POST["name"] ."<".$_POST["email"]. "<".$_POST["phone"]."<".$_POST["year"]."<".$_POST["major"]."<".$_POST["category"]."<".$_POST["message"]."> \r\n";
 	$headers = "From: ". $_POST["name"] ."<".$_POST["email"]. ">\r\n";
 	mail($to, 'Registration', $msg,$headers);
-	echo "Email Sent to " . $to;
 
 	//Write to file
 	fwrite($handle, $fileInfo);

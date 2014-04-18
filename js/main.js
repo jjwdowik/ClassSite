@@ -47,15 +47,11 @@ $(document).ready(function() {
 
         dataslide = $(this).attr('data-slide');
 
-        console.log("heree" + dataslide + " direction " + direction);
-
 
         if (direction === 'down' && dataslide!=1) {
-            console.log(" downnn ");
             $('#nav ul li[data-slide="' + dataslide + '"]').attr('id', 'current').prev().removeAttr('id', 'current');
         }
         else if(direction === 'up' && dataslide!=1) {
-            console.log(" upppp ");
             $('#nav ul li[data-slide="' + dataslide + '"]').attr('id', 'current').next().removeAttr('id', 'current');
         }
         else if(dataslide == 1) {
@@ -72,6 +68,52 @@ $(document).ready(function() {
         }
 
     });
+
+
+    //check email function
+    function checkEmail() {
+        if($('#email').val() != $('#verifyEmail').val()) {
+            $('#errorForm').fadeIn( 2000, function () {
+                $('#errorForm').delay( 4000 ).fadeOut("slow");
+            }); 
+            return false;
+        }
+        else{
+            return true;
+        }
+    };
+
+
+    $("#contactForm").submit(function() {
+
+        if(checkEmail()) {
+            var url = "processForm.php"; // the script where you handle the form input.
+
+            $.ajax({
+                   type: "POST",
+                   url: url,
+                   data: $("#contactForm").serialize(), // serializes the form's elements.
+                   success: function(data)
+                   {
+                       $('#contactForm').fadeOut("slow", function () {
+                            $('#thankYou').fadeIn( 2000); 
+                       });
+                       
+                   }
+                 });
+
+        }
+        return false;
+    });
+
+
+
+
+    //form stuff
+
+
+
+
 
 
 

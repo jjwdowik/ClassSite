@@ -152,7 +152,6 @@ h1.skills {
 	border-radius:28px;
 	border:1px solid #18ab29;
 	display:inline-block;
-	cursor:pointer;
 	color:#ffffff;
 	font-family:arial;
 	font-size:17px;
@@ -572,9 +571,21 @@ input[type=submit] {
 	height: 52px;
 }
 
+#thankYou {
+	display: none;
+	text-align: center;
 
+}
 
+#thankYou h1 {
+	color: #4DB6C4;
+}
 
+#errorForm {
+	display: none;
+	color: red;
+	text-align: center;
+}
 
 
 
@@ -692,7 +703,7 @@ p.foot {
 	}
 	nav a#pull:after {
 		content:"";
-		background: url('http://localhost/ClassSite/img/nav-icon.png') no-repeat;
+		background: url('http://www.jeremywdowik.com/img/nav-icon.png') no-repeat;
 		width: 30px;
 		height: 30px;
 		display: inline-block;

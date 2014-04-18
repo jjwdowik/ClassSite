@@ -22,7 +22,7 @@
 
 		<section id="home" class="slide" data-slide="1">
 			<div class="space"></div>
-			<div class="center"><img src="http://localhost/ClassSite/img/wdowik.jpg" alt="Jeremy" class="circular"></div>
+			<div class="center"><img src="http://www.jeremywdowik.com/img/wdowik.jpg" alt="Jeremy" class="circular"></div>
 			<h1 class="name">Jeremy Wdowik</h1>
 		</section>
 
@@ -35,7 +35,7 @@
 				<div id="divBreak"></div>
 				<div class="myButton">CSS3</div>
 				<div class="myButton">Python</div>
-				<div class="myButton">Javascript</div>
+				<div class="myButton">JavaScript</div>
 
 			</div>
 		</section>
@@ -46,15 +46,15 @@
 			<div class="projContainer">
 
                 <div class="view view-nice">
-                    <img src="http://localhost/ClassSite/img/flag.png" />
+                    <img src="http://www.jeremywdowik.com/img/flag.png" />
                     <div class="mask">
                         <h2>Capture the Flag<br /> Java Game!<br /><br /></h2>
-                        <a href="http://localhost/ClassSite/img/CaptureTheFlag.jar" class="info">Download!</a>
+                        <a href="http://www.jeremywdowik.com/img/CaptureTheFlag.jar" class="info">Download!</a>
                     </div>
                 </div>
 
                 <div class="view view-nice">
-                    <img src="http://localhost/ClassSite/img/sand.jpg" />
+                    <img src="http://www.jeremywdowik.com/img/sand.jpg" />
                     <div class="mask">
                         <h2>SandCastle Beach Resort<br /> Website!<br /><br /></h2>
                         <a href="http://www.sandcastlebeachresort.com" target="_blank" class="info">View the Site!</a>
@@ -64,7 +64,7 @@
                 <div id="divBreak"></div>
 
                 <div class="view view-nice">
-                    <img src="http://localhost/ClassSite/img/ktp.jpg" />
+                    <img src="http://www.jeremywdowik.com/img/ktp.jpg" />
                     <div class="mask">
                         <h2 class="white">Kappa Theta Pi<br /> Website!<br /><br /></h2>
                         <a href="http://www.kappathetapi.com" target="_blank" class="info">View the Site!</a>
@@ -72,7 +72,7 @@
                 </div>
 
                 <div class="view view-nice">
-                    <img src="http://localhost/ClassSite/img/jollygoat.png" />
+                    <img src="http://www.jeremywdowik.com/img/jollygoat.png" />
                     <div class="mask">
                         <h2>Web Dev and Consulting!<br /><br /></h2>
                         <a href="http://jollygoat.com" target="_blank" class="info">View the Site!</a>
@@ -98,18 +98,25 @@
 				<h2>Java Development Intern Summer 2014</h2>
 				<div id="divBreak"></div>
 				<div id="divBreak"></div>
-				<a href="http://localhost/ClassSite/img/resume.pdf" target="_blank"><div class="resume">View My Resume</div></a>
+				<a href="http://www.jeremywdowik.com/img/resume.pdf" target="_blank"><div class="resume">View My Resume</div></a>
 			</div>
 		</section>		
 		
 		<section id="contact" class="slide" data-slide="5">
 			<h1 class="con">Contact</h1>
 
+			<div id="thankYou">
+				<h1>Thank you for the info!!</h1>
+				<div id="divBreak"></div>
+				<div id="divBreak"></div>
+				<div class="center"><img src="http://www.jeremywdowik.com/img/umich.jpg" alt="Jeremy" class="circular"></div>
+			</div>
+
 			<div id="contactForm">
-				<form action="processForm.php" method = "POST" onsubmit="return checkEmail(this);">
+				<form id="contactSubmit">
 					<fieldset>
 						<label for="name">Name</label>
-						<input id="name" name="name" type="text" placeholder="First and last name" required autofocus>
+						<input id="name" name="name" type="text" placeholder="First and last name" required>
 						<div id="divBreak"></div>	
 						<label for="email">Email</label>
 						<input id="email" name="email" type="email" placeholder="example@domain.com" required>
@@ -127,7 +134,9 @@
 
 
 				</form>
+				<p id="errorForm">Those emails don't match!</p>
 			</div>
+
 
 		</section>	
 
@@ -140,10 +149,19 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.localscroll-1.2.7.js"></script>
 	<script type="text/javascript" src="js/jquery.scrollTo-1.4.3.1.js"></script>
-	<script type="text/javascript" src="js/waypoints.min.js"></script>
-	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>		
+	<script type="text/javascript" src="js/waypoints.min.js"></script>		
 	<script type="text/javascript" src="js/main.js"></script>
-	<script src="js/emailCheck.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+	<script type="text/javascript">
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-45764816-1', 'jeremywdowik.com');
+	  ga('send', 'pageview');
+	</script>
+
 
 	</body>
 
