@@ -2,7 +2,7 @@
 	$filename = "jjForm.csv";
 	$handle = fopen($filename, 'a');
 	//a means open file append, if doesn't exist create it and append it
-	$msg = "Thank you for your info";
+	$msg = "That person's name is ";
 	$fileInfo = "";
 	foreach($_POST as $name => $value){
 		print "$name : $value<br/>";
@@ -12,10 +12,10 @@
 	$fileInfo.="\n";
 
 	//send email
-	$to = "jeremywdowik@gmail.com";
+	$to = "jjwdowik@umich.edu";
 	// $headers = "From: ". $_POST["name"] ."<".$_POST["email"]. "<".$_POST["phone"]."<".$_POST["year"]."<".$_POST["major"]."<".$_POST["category"]."<".$_POST["message"]."> \r\n";
 	$headers = "From: ". $_POST["name"] ."<".$_POST["email"]. ">\r\n";
-	mail($to, 'Registration', $msg,$headers);
+	mail($to, '[Feedback] JeremyWdowikSite', $msg,$headers);
 
 	//Write to file
 	fwrite($handle, $fileInfo);

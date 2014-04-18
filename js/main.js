@@ -88,11 +88,17 @@ $(document).ready(function() {
 
         if(checkEmail()) {
             var url = "processForm.php"; // the script where you handle the form input.
+            var data = {};
+
+            data['name'] = $('#name').val();
+            data['email'] = $('#email').val();
+            data['verifyEmail'] = $('#verifyEmail').val(); 
+            data['message'] = $('#message').val(); 
 
             $.ajax({
                    type: "POST",
                    url: url,
-                   data: $("#contactForm").serialize(), // serializes the form's elements.
+                   data: data, // serializes the form's elements.
                    success: function(data)
                    {
                        $('#contactForm').fadeOut("slow", function () {

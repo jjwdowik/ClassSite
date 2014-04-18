@@ -124,7 +124,7 @@
 						<label for="verifyEmail">Verify Email</label>
 						<input id="verifyEmail" name="verifyEmail" type="email" placeholder="example@domain.com" required>
 						<div id="divBreak"></div>
-						<label for="major">message</label>
+						<label for="message">message</label>
 						<textarea id = "message" name="message" type="text" placeholder = "Please write your message here"></textarea>
 						<div id="divBreak"></div>
 					</fieldset>
