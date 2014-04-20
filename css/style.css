@@ -68,7 +68,7 @@ section {
 
 }
 
-#divBreak {
+.divbreak {
 	clear: both;
 	height: 2em;
 }
@@ -603,7 +603,7 @@ footer {
 
 }
 
-p.foot {
+footer p {
 	margin: 0;
 	text-align: center;
 	font-size: 1.2em;

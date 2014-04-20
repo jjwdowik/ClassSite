@@ -12,7 +12,7 @@
 	$fileInfo.="\n";
 
 	//send email
-	$to = "jjwdowik@umich.edu";
+	$to = "jeremywdowik@gmail.com";
 	// $headers = "From: ". $_POST["name"] ."<".$_POST["email"]. "<".$_POST["phone"]."<".$_POST["year"]."<".$_POST["major"]."<".$_POST["category"]."<".$_POST["message"]."> \r\n";
 	$headers = "From: ". $_POST["name"] ."<".$_POST["email"]. ">\r\n";
 	mail($to, '[Feedback] JeremyWdowikSite', $msg,$headers);

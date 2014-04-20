@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>Jeremy Wdowik</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -32,7 +32,7 @@
 				<div class="myButton">C++</div>
 				<div class="myButton">Java</div>
 				<div class="myButton">HTML5</div>
-				<div id="divBreak"></div>
+				<div class="divbreak"></div>
 				<div class="myButton">CSS3</div>
 				<div class="myButton">Python</div>
 				<div class="myButton">JavaScript</div>
@@ -46,7 +46,7 @@
 			<div class="projContainer">
 
                 <div class="view view-nice">
-                    <img src="http://www.jeremywdowik.com/img/flag.png" />
+                    <img src="http://www.jeremywdowik.com/img/flag.png" alt="flag" />
                     <div class="mask">
                         <h2>Capture the Flag<br /> Java Game!<br /><br /></h2>
                         <a href="http://www.jeremywdowik.com/img/CaptureTheFlag.jar" class="info">Download!</a>
@@ -54,17 +54,17 @@
                 </div>
 
                 <div class="view view-nice">
-                    <img src="http://www.jeremywdowik.com/img/sand.jpg" />
+                    <img src="http://www.jeremywdowik.com/img/sand.jpg" alt="sand"/>
                     <div class="mask">
                         <h2>SandCastle Beach Resort<br /> Website!<br /><br /></h2>
                         <a href="http://www.sandcastlebeachresort.com" target="_blank" class="info">View the Site!</a>
                     </div>
                 </div>
 
-                <div id="divBreak"></div>
+                <div class="divbreak"></div>
 
                 <div class="view view-nice">
-                    <img src="http://www.jeremywdowik.com/img/ktp.jpg" />
+                    <img src="http://www.jeremywdowik.com/img/ktp.jpg" alt="ktp" />
                     <div class="mask">
                         <h2 class="white">Kappa Theta Pi<br /> Website!<br /><br /></h2>
                         <a href="http://www.kappathetapi.com" target="_blank" class="info">View the Site!</a>
@@ -72,7 +72,7 @@
                 </div>
 
                 <div class="view view-nice">
-                    <img src="http://www.jeremywdowik.com/img/jollygoat.png" />
+                    <img src="http://www.jeremywdowik.com/img/jollygoat.png" alt="jollygoat"/>
                     <div class="mask">
                         <h2>Web Dev and Consulting!<br /><br /></h2>
                         <a href="http://jollygoat.com" target="_blank" class="info">View the Site!</a>
@@ -90,14 +90,14 @@
 			<div class="theExp">
 				<h1>MPrint - University of Michigan</h1>
 				<h2>MPrint Student Temp 2013 - Current</h2>
-				<div id="divBreak"></div>
+				<div class="divbreak"></div>
 				<h1>ADP (Auto Data Processing)</h1>
 				<h2>Hosting Operations Intern Summer 2013</h2>
-				<div id="divBreak"></div>
+				<div class="divbreak"></div>
 				<h1>The Boeing Company</h1>
 				<h2>Java Development Intern Summer 2014</h2>
-				<div id="divBreak"></div>
-				<div id="divBreak"></div>
+				<div class="divbreak"></div>
+				<div class="divbreak"></div>
 				<a href="http://www.jeremywdowik.com/img/resume.pdf" target="_blank"><div class="resume">View My Resume</div></a>
 			</div>
 		</section>		
@@ -107,8 +107,8 @@
 
 			<div id="thankYou">
 				<h1>Thank you for the info!!</h1>
-				<div id="divBreak"></div>
-				<div id="divBreak"></div>
+				<div class="divbreak"></div>
+				<div class="divbreak"></div>
 				<div class="center"><img src="http://www.jeremywdowik.com/img/umich.jpg" alt="Jeremy" class="circular"></div>
 			</div>
 
@@ -117,16 +117,16 @@
 					<fieldset>
 						<label for="name">Name</label>
 						<input id="name" name="name" type="text" placeholder="First and last name" required>
-						<div id="divBreak"></div>	
+						<div class="divbreak"></div>	
 						<label for="email">Email</label>
 						<input id="email" name="email" type="email" placeholder="example@domain.com" required>
-						<div id="divBreak"></div>
+						<div class="divbreak"></div>
 						<label for="verifyEmail">Verify Email</label>
 						<input id="verifyEmail" name="verifyEmail" type="email" placeholder="example@domain.com" required>
-						<div id="divBreak"></div>
+						<div class="divbreak"></div>
 						<label for="message">message</label>
-						<textarea id = "message" name="message" type="text" placeholder = "Please write your message here"></textarea>
-						<div id="divBreak"></div>
+						<textarea id = "message" name="message" placeholder = "Please write your message here" required></textarea>
+						<div class="divbreak"></div>
 					</fieldset>
 
 
