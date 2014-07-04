@@ -24,6 +24,10 @@ $(function() {
         if(w > 320 && menu.is(':hidden')) {
             menu.removeAttr('style');
         }
+        //to fix bug of disappearing nav
+        if(w > 800) {
+            isPulled = 0;
+        }
     });
 });
 
@@ -68,6 +72,54 @@ $(document).ready(function() {
         }
 
     });
+
+    // function goDownScroll(dataslide) {
+    //     if(dataslide === '1') {
+    //         htmlbody.animate({
+    //             scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top
+    //         }, 2000, 'easeInOutQuint');
+    //     }
+    //     else {
+    //         htmlbody.animate({
+    //             scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top+1
+    //         }, 2000, 'easeInOutQuint');            
+    //     }
+
+
+    // }
+
+    // function goUpScroll(dataslide) {
+    //     htmlbody.animate({
+    //         scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top-1
+    //     }, 2000, 'easeInOutQuint');
+
+    // }
+
+    // var links = $('#nav ul').find('li');
+    // button = $('.button');
+
+    // links.click(function (e) {
+    //     e.preventDefault();
+    //     tempSlide = dataslide;
+    //     dataslide = $(this).attr('data-slide');
+    //     if(tempSlide > dataslide) {
+    //         //scroll up
+    //         goUpScroll(dataslide);
+    //     }
+    //     else {
+    //         goDownScroll(dataslide);
+    //     }
+
+    // });
+
+    // button.click(function (e) {
+    //     e.preventDefault();
+    //     dataslide = $(this).attr('data-slide');
+    //     goToByScroll(dataslide);
+
+    // });
+
+
 
 
     //check email function
