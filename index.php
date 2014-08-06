@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
 	<head>
 		<title>Jeremy Wdowik</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -77,7 +82,9 @@
                         <h2>Web Dev and Consulting!<br /><br /></h2>
                         <a href="http://jollygoat.com" target="_blank" class="info">View the Site!</a>
                     </div>
-                </div>                
+                </div>
+
+                <iframe class="viewVideo" src="//www.youtube.com/embed/kxN2JS4aoco" frameborder="0" allowfullscreen></iframe>              
 
 
 
@@ -85,6 +92,7 @@
 
 		</section>
 
+		<div class="ieFixExperience"></div>
 		<section id="experiences" class="slide" data-slide="4" data-stellar-background-ratio="0.5">
 			<h1 class="exp">Experience</h1>
 			<div class="theExp">

@@ -2,7 +2,7 @@
 	$filename = "jjForm.csv";
 	$handle = fopen($filename, 'a');
 	//a means open file append, if doesn't exist create it and append it
-	$msg = "That person's name is ";
+	$msg = "Okay lets get it \n\n ";
 	$fileInfo = "";
 	foreach($_POST as $name => $value){
 		print "$name : $value<br/>";
