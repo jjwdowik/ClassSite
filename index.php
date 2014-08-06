@@ -84,6 +84,18 @@
                     </div>
                 </div>
 
+                <div class="divbreak"></div>
+
+                <div class="view view-nice">
+                    <img src="img/felix.jpeg" alt="felix"/>
+                    <div class="mask">
+                        <h2>Felix the Tweeting Chair!<br /><br /></h2>
+                        <a href="http://about.me/tweetingchair" target="_blank" class="info">View the Site!</a>
+                    </div>
+                </div>
+
+
+
                 <iframe class="viewVideo" src="//www.youtube.com/embed/kxN2JS4aoco" frameborder="0" allowfullscreen></iframe>              
 
 
