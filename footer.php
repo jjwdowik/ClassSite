@@ -1,6 +1,6 @@
 	
 <footer>
-	<p>All Rights Reserved. 2014. Website created by Jeremy Wdowik. </p>
+	<p>All Rights Reserved. <?php echo date("Y"); ?> Website created by Jeremy Wdowik. </p>
 	<!-- Icons that are always there -->
 	<div id="theIcons">
 		<a href="https://www.facebook.com/jeremywdowik" target="_blank" class="links" title="facebook"><i class="fa fa-facebook fa-2x"></i></a>
